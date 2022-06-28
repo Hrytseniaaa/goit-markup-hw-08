@@ -1,0 +1,32 @@
+.title {
+    color: var(--section-title-color);
+
+}
+
+
+.join-title,
+.hero-title,
+.preferences-title {
+    text-transform: uppercase;
+}
+
+
+
+.section-title {
+    @include font(700, 36px, 1.16);
+
+    margin-bottom: 50px;
+   
+    text-align: center;
+
+    color: var(--section-title-color)
+}
+
+.footer-titles {
+    @include font(700, 14px, 1.14);
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+    color: var(--white-color);
+}

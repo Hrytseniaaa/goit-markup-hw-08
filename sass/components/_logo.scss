@@ -1,0 +1,29 @@
+.logo {
+
+
+
+    font-family: 'Raleway', sans-serif;
+    @include font (700, 26px, 1.19);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+header .logo {
+    margin-right: 93px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.logo-white {
+    color: var(--white-color);
+}
+
+.logo-black {
+    color: var(--section-title-color);
+}

@@ -1,0 +1,15 @@
+:root {
+    --icon-silver--: #AFB1B8;
+    --primary-text-color: #757575;
+    --section-title-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #ffffff;
+    --fotter-link: rgba(255, 255, 255, 0.6);
+    --button-hover--: #188CE8;
+}
+
+@mixin font($fw, $fs, $fh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $fh;
+}

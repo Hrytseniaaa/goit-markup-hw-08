@@ -1,0 +1,130 @@
+header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* site naw */
+.site-nav .current {
+    color: var(--accent-color);
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: -1px;
+}
+
+.second-current {
+    width: 78px;
+    margin-top: 32px;
+
+    &::after {
+        content: '';
+        height: 4px;
+        display: block;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        margin-top: 28px;
+
+    }
+}
+
+.first-current {
+    width: 49px;
+    margin-top: 32px;
+
+    &::after {
+        content: '';
+        height: 4px;
+        display: block;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        margin-top: 28px;
+
+    }
+}
+
+.nav-item:not(:last-child),
+.connection-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+
+.site-nav .link {
+    color: var(--section-title-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+
+
+
+.site-link .link,
+.site-nav .link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
+/* посилання у шапці  */
+
+.connection-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+.site-link .link {
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+}
+
+
+
+.connection-item .link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+
+
+.site-link {
+    align-items: center;
+    margin-left: auto;
+
+}
+
+/* спільне для усіх посилань шапки */
+.site-link,
+.site-nav {
+    align-items: center;
+    @include font (500, 14px, 1.14);
+    letter-spacing: 0.02em;
+    display: flex;
+
+
+}

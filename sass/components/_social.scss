@@ -1,0 +1,41 @@
+
+
+.soc-list__master {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-silver--);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+        }
+}
+
+
+.soc-list__icon {
+    fill: currentColor;
+}
+
+
+
+
+
+.soc-list {
+    display: flex;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+    margin-right: 10px;
+}
+}
+
+
+
