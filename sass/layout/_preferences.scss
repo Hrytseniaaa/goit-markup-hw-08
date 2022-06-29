@@ -1,13 +1,31 @@
 .preferences {
-    flex-basis: calc((100% - 90px) / 4);
+    // flex-basis: calc((100% - 90px) / 4);
+
+    @media screen and (min-width: 480px) {
+            
+        }
+    
+        @media screen and (min-width: 768px) {
+                flex-basis: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+                flex-basis: calc((100% - 90px) / 4);
+        }
 }
 
-.preferences-list {
-    display: flex;
+.preferences:not(:last-child) {
+    margin-bottom: 30px;
 }
+
+
 
 .section-preferences {
-    padding-bottom: 0;
+    // padding-bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+        }
 }
 
 

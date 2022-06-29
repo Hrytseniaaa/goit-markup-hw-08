@@ -1,10 +1,21 @@
 .customer {
-    display: flex;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    flex-basis: calc((100% - 150px) / 6);
+        display: flex;
+            flex-basis: calc((100% - 30px) / 2);
+   
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+        }
+
+    
 }
 
 
