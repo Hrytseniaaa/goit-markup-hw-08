@@ -13,7 +13,7 @@
 </head>      
 <body>   
 
-    <!-- <header>
+    <header>
     
     
         <div class="container container-header">
@@ -38,12 +38,12 @@
             </ul>
         </div>
     
-    </header> -->
+    </header>
 
     <main>
         <!--верхній баннер-->
         <section class="hero section">
-            <div class="container">
+            <div class="container hero-container">
                 <h1 class="hero-title ">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button btn" data-modal-open>Заказать услугу</button>
             </div>
@@ -98,7 +98,7 @@
         </section> 
 
         <!-- чим займаємося--> 
-         <!-- <section class="works section">
+         <section class="works section">
            <div class="container works-container">
                 <h2 class="section-title title works-title">Чем мы занимаемся</h2>
                 <ul class="works-list">
@@ -135,7 +135,7 @@
                 
                 </ul>
            </div>
-        </section> -->
+        </section>
 
         <!-- наша команда -->
    
@@ -144,8 +144,19 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="card-set">
                     <li class="co-worker">
-        
-                        <img src="./images/was-img(1).jpg" alt="Игорь Демьяненко" width="270">
+                        <picture>
+                        <source srcset="./images/co-workers/ihor-dec.jpeg 1x,
+                             ./images/co-workers/ihor-dec-2x.jpeg 2x "
+                              media="(min-width: 1200px)" />
+                            <source srcset="./images/co-workers/ihor-tab.jpeg 1x,
+                              ./images/co-workers/ihor-tab-2x.jpeg 2x "
+                               media="(min-width: 768px)" />
+                            <source srcset="./images/co-workers/ihor-mob.jpeg 1x ,
+                             ./images/co-workers/ihor-mob-2x.jpeg 2x "
+                              media="(min-width: 320px)" />
+                            <img src="./images/co-workers/ihor-mob.jpeg" alt="Игорь Демьяненко">
+                        </picture>
+     
                         <div class="co-worker__info">
                             <h3 class="co-worker__title title">Игорь Демьяненко</h3>
                             <p class="co-worker__position" lang="en">Product Designer</p>
@@ -181,7 +192,18 @@
                     </li>
                     <li class="co-worker">
         
-                        <img src="./images/was-img-7(1).jpg" alt="Ольга Репина" width="270">
+                        <picture>
+                            <source srcset="./images/co-workers/olha-dec.jpeg 1x,
+                                                     ./images/co-workers/olha-dec-2x.jpeg 2x " 
+                                                     media="(min-width: 1200px)" />
+                            <source srcset="./images/co-workers/olha-tab.jpeg 1x,
+                                                      ./images/co-workers/olha-tab-2x.jpeg 2x "
+                                                       media="(min-width: 768px)" />
+                            <source srcset="./images/co-workers/olha-mob.jpeg 1x ,
+                                                     ./images/co-workers/olha-mob-2x.jpeg 2x "
+                                                      media="(min-width: 320px)" />
+                            <img src="./images/co-workers/olha-mob.jpeg" alt="Ольга Репина">
+                        </picture>
                         <div class="co-worker__info">
                             <h3 class="co-worker__title title">Ольга Репина</h3>
                             <p class="co-worker__position" lang="en">Frontend Developer</p>
@@ -216,8 +238,15 @@
         
                     </li>
                     <li class="co-worker">
-        
-                        <img src="./images/was-mg-8(1).jpg" alt="Николай Тарасов" width="270">
+                        <picture>
+                            <source srcset="./images/co-workers/mykola-dec.jpeg 1x,
+                                                     ./images/co-workers/mykola-dec-2x.jpeg 2x " media="(min-width: 1200px)" />
+                            <source srcset="./images/co-workers/mykola-tab.jpeg 1x,
+                                                      ./images/co-workers/mykola-tab-2x.jpeg 2x " media="(min-width: 768px)" />
+                            <source srcset="./images/co-workers/mykola-mob.jpeg 1x ,
+                                                     ./images/co-workers/mykola-mob-2x.jpeg 2x " media="(min-width: 320px)" />
+                            <img src="./images/co-workers/mykola-mob.jpeg" alt=" Николай Тарасов">
+                        </picture>
                         <div class="co-worker__info">
                             <h3 class="co-worker__title title">Николай Тарасов</h3>
                             <p class="co-worker__position" lang="en">Marketing</p>
@@ -253,9 +282,19 @@
         
                     </li>
                     <li class="co-worker">
-        
-                        <img src="./images/was-img-9(1).jpg" alt="Михаил Ермаков" width="270">
-                        <div class="co-worker__info">
+                            <picture>
+                                <source srcset="./images/co-workers/misha-dec.jpeg 1x,
+                                                                                 ./images/co-workers/misha-dec-2x.jpeg 2x "
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/co-workers/misha-tab.jpeg 1x,
+                                                                                  ./images/co-workers/misha-tab-2x.jpeg 2x "
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/co-workers/misha-mob.jpeg 1x ,
+                                                                                 ./images/co-workers/misha-mob-2x.jpeg 2x "
+                                    media="(min-width: 320px)" />
+                                <img src="./images/co-workers/misha-mob.jpeg" alt=" Михаил Ермаков">
+                            </picture>
+                            <div class="co-worker__info">
                             <h3 class="co-worker__title title">Михаил Ермаков</h3>
                             <p class="co-worker__position" lang="en">UI Designer </p>
                             <ul class="soc-list">
@@ -352,57 +391,67 @@
 
 
 
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="footer-containers container">
-                <div class=" address-container footer-item">
-                    <a href="./index.html" class="footer-logo logo"> Web<span class="logo-white">Studio </span></a>
-                    <address class="address">
-                        <ul class="list">
-                            <li class="adress-item">
-                                <a href="https://goo.gl/maps/nEoxrLHgyLhJDWgF7" target="_blank"
-                                    rel="noopener noreferrer nofollow" class="kuyiv-address link">г. Киев, пр-т Леси Украинки,
-                                    26</a>
+                <div class="footer-info">
+
+                    <div class=" address-container footer-item">
+                        <a href="./index.html" class="footer-logo logo"> Web<span class="logo-white">Studio </span></a>
+                        <address class="address">
+                            <ul class="list">
+                                <li class="adress-item">
+                                    <a href="https://goo.gl/maps/nEoxrLHgyLhJDWgF7" target="_blank" rel="noopener noreferrer nofollow"
+                                        class="kuyiv-address link">г. Киев, пр-т Леси Украинки,
+                                        26</a>
+                                </li>
+                                <li class="adress-item">
+                                    <a href="mailto:info@example.com" class="link">info@example.com</a>
+                                </li>
+                                <li class="adress-item">
+                                    <a href="tel:+380991111111" class="link tell-link">+38 099 111 11 11</a>
+                                </li>
+                    
+                            </ul>
+                        </address>
+                    </div>
+                    
+                    <div class="join-container footer-item">
+                    
+                        <h3 class="join-title footer-titles">присоединяйтесь</h3>
+                        <ul class="soc-list">
+                            <li class="soc-list__item">
+                                <a href="" class="soc-list__master  footer-soc-master">
+                                    <svg class="soc-list__icon" width="20px" height="20px">
+                                        <use href="./images/icons&BG/icons.svg#icon-instagram-2-1"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="adress-item">
-                                <a href="mailto:info@example.com" class="link">info@example.com</a>
+                            <li class="soc-list__item">
+                                <a href="" class="soc-list__master footer-soc-master"> <svg class="soc-list__icon" width="20px"
+                                        height="20px">
+                                        <use href="./images/icons&BG/icons.svg#icon-twitter-1"></use>
+                                    </svg></a>
                             </li>
-                            <li class="adress-item">
-                                <a href="tel:+380991111111" class="link tell-link">+38 099 111 11 11</a>
+                            <li class="soc-list__item">
+                                <a href="" class="soc-list__master footer-soc-master"> <svg class="soc-list__icon" width="20px"
+                                        height="20px">
+                                        <use href="./images/icons&BG/icons.svg#icon-facebook-11"></use>
+                                    </svg></a>
                             </li>
-        
+                            <li class="soc-list__item">
+                                <a href="" class="soc-list__master footer-soc-master"><svg class="soc-list__icon" width="20px"
+                                        height="20px">
+                                        <use href="./images/icons&BG/icons.svg#icon-linkedin-1"></use>
+                                    </svg></a>
+                            </li>
                         </ul>
-                    </address>
+                    
+                    </div>
+
+
+
                 </div>
-        
-                <div class="join-container footer-item">
-        
-                    <h3 class="join-title footer-titles">присоединяйтесь</h3>
-                    <ul class="soc-list">
-                        <li class="soc-list__item">
-                            <a href="" class="soc-list__master  footer-soc-master">
-                                <svg class="soc-list__icon" width="20px" height="20px">
-                                    <use href="./images/icons&BG/icons.svg#icon-instagram-2-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-list__item">
-                            <a href="" class="soc-list__master footer-soc-master"> <svg class="soc-list__icon" width="20px" height="20px">
-                                    <use href="./images/icons&BG/icons.svg#icon-twitter-1"></use>
-                                </svg></a>
-                        </li>
-                        <li class="soc-list__item">
-                            <a href="" class="soc-list__master footer-soc-master"> <svg class="soc-list__icon" width="20px" height="20px">
-                                    <use href="./images/icons&BG/icons.svg#icon-facebook-11"></use>
-                                </svg></a>
-                        </li>
-                        <li class="soc-list__item">
-                            <a href="" class="soc-list__master footer-soc-master"><svg class="soc-list__icon" width="20px" height="20px">
-                                    <use href="./images/icons&BG/icons.svg#icon-linkedin-1"></use>
-                                </svg></a>
-                        </li>
-                    </ul>
-        
-                </div>
+                
 
                 <div class="submit-container footer-item">
                     <form class="sub">
@@ -435,7 +484,7 @@
         
         
         
-        </footer> -->
+        </footer>
 
 
 

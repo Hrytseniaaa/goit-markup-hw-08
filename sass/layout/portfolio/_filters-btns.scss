@@ -1,9 +1,19 @@
 .filter {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    flex-basis: calc((100%-30px)3);
-    padding-bottom: 50px;
+         display: flex;
+         column-gap: 8px;
+         row-gap: 15px;
+         flex-wrap: wrap;
+         justify-content: left;    
+        margin-bottom: 45px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .filter .current {
@@ -12,9 +22,7 @@
 }
 
 
-.filters:not(:last-child) {
-    margin-right: 8px;
-}
+
 
 .filter-button {
     padding: 6px 22px;
@@ -35,6 +43,8 @@
             color: var(--white-color);
             background-color: var(--accent-color);
         }
+
+
 
 }
 

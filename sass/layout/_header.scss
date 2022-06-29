@@ -12,17 +12,30 @@ header {
 
 
 /* site naw */
+
+.site-nav .link {
+    color: var(--section-title-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
 .site-nav .current {
-    color: var(--accent-color);
     padding-bottom: 0;
     padding-top: 0;
     margin-bottom: -1px;
+    color: var(--accent-color);
 }
 
 .second-current {
     width: 78px;
     margin-top: 32px;
-
     &::after {
         content: '';
         height: 4px;
@@ -37,7 +50,6 @@ header {
 .first-current {
     width: 49px;
     margin-top: 32px;
-
     &::after {
         content: '';
         height: 4px;
@@ -56,28 +68,15 @@ header {
 
 
 
-
-.site-nav .link {
-    color: var(--section-title-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-            color: var(--accent-color);
-        }
-}
-
-
-
-
-
 .site-link .link,
 .site-nav .link {
+
+
+    @media screen and (min-width: 768px) {
     display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
+    }
 }
 
 
@@ -91,6 +90,7 @@ header {
 
 
 .site-link .link {
+
     color: var(--primary-text-color);
     display: flex;
     align-items: center;
@@ -121,10 +121,16 @@ header {
 /* спільне для усіх посилань шапки */
 .site-link,
 .site-nav {
+    display: none;
+    @media screen and (min-width: 768px) {
     align-items: center;
     @include font (500, 14px, 1.14);
     letter-spacing: 0.02em;
     display: flex;
+    }
+
 
 
 }
+
+// icon-menu_40px

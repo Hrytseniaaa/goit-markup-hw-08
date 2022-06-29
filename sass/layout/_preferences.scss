@@ -14,10 +14,6 @@
         }
 }
 
-.preferences:not(:last-child) {
-    margin-bottom: 30px;
-}
-
 
 
 .section-preferences {
@@ -31,9 +27,15 @@
 
 
 .preferences-title {
+    text-align: center;
     @include font (700, 14px, 1.14);
     margin-bottom: 10px;
-    color: var(--section-title-color)
+    color: var(--section-title-color);
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+    
 }
 
 .preferences-text {

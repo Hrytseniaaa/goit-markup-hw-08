@@ -14,12 +14,13 @@
 
 .section-title {
     @include font(700, 28px, 1.1);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     color: var(--section-title-color);
 
     @media screen and (min-width: 1200px) {
             @include font(null, 36px, 1.16);
+            margin-bottom: 50px;
         }
     
 }
@@ -27,8 +28,13 @@
 .footer-titles {
     @include font(700, 14px, 1.14);
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
+   
     text-transform: uppercase;
     display: block;
     color: var(--white-color);
+
+    @media screen and (min-width: 1200px) {
+         text-align: left;
+    }
 }
