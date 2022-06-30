@@ -7,6 +7,8 @@
   --white-color: #ffffff;
   --fotter-link: rgba(255, 255, 255, 0.6);
   --button-hover--: #188CE8;
+  --font-roboto: Roboto, sans-serif;
+  --font-logo: Raleway;
 }
 
 p,
@@ -146,8 +148,16 @@ img {
   }
 }
 
-header .logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  header .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .logo {
+    margin-right: 93px;
+  }
 }
 
 .footer-logo {
@@ -267,6 +277,21 @@ header {
 }
 
 /* site naw */
+.site-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+  }
+}
+
 .site-nav .link {
   color: var(--section-title-color);
   transition-property: color;
@@ -278,11 +303,85 @@ header {
   color: var(--accent-color);
 }
 
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* посилання у шапці  */
+.site-link {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-link {
+    display: block;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-link {
+    font-size: 14px;
+    line-height: 1.14;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.connection-link {
+  color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connection-link:hover, .connection-link:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .connection-link {
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-link__mail {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-link__mail {
+    margin-bottom: 0;
+  }
+}
+
+.connection-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .connection-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+/* спільне для усіх посилань шапки */
 .site-nav .current {
   padding-bottom: 0;
   padding-top: 0;
   margin-bottom: -1px;
   color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .second-current {
@@ -313,62 +412,20 @@ header {
   margin-top: 28px;
 }
 
-.nav-item:not(:last-child),
-.connection-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .site-link .link,
-  .site-nav .link {
-    display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-
-/* посилання у шапці  */
-.connection-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.site-link .link {
-  color: var(--primary-text-color);
-  display: flex;
-  align-items: center;
-}
-
-.connection-item .link {
-  transition-property: color;
+.heder-menu {
+  margin-left: auto;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.connection-item .link:hover, .connection-item .link:focus {
-  color: var(--accent-color);
-}
-
-.site-link {
-  align-items: center;
-  margin-left: auto;
-}
-
-/* спільне для усіх посилань шапки */
-.site-link,
-.site-nav {
-  display: none;
+.heder-menu:focus, .heder-menu:hover {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
-  .site-link,
-  .site-nav {
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
+  .heder-menu {
+    display: none;
   }
 }
 

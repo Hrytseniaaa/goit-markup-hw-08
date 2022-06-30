@@ -13,6 +13,17 @@ header {
 
 /* site naw */
 
+.site-nav {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        @include font (500, 14px, 1.14);
+        letter-spacing: 0.02em;
+        display: flex;
+    }
+}
+
 .site-nav .link {
     color: var(--section-title-color);
     transition-property: color;
@@ -26,16 +37,110 @@ header {
 }
 
 
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+/* посилання у шапці  */
+
+
+
+.site-link {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        @include font (500, 12px, 1.16);
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        @include font (null, 14px, 1.14);
+        display: flex;
+        margin-left: auto;
+
+    }
+}
+
+
+.connection-link {
+    color: var(--primary-text-color);
+    
+
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+        @media screen and (min-width: 1200px) {
+        align-items: center;
+        margin-left: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        }
+}
+
+
+
+
+.site-link__mail {
+    @media screen and (min-width: 768px) {
+         margin-bottom: 10px;
+    }
+   
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+}
+
+
+.connection-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+
+
+.connection-item:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+            margin-right: 50px;
+
+    }
+}
+
+
+
+
+
+/* спільне для усіх посилань шапки */
+// .site-link,
+
+
+// ----------CURENTS-----------
+
 .site-nav .current {
     padding-bottom: 0;
     padding-top: 0;
     margin-bottom: -1px;
     color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .second-current {
     width: 78px;
     margin-top: 32px;
+
     &::after {
         content: '';
         height: 4px;
@@ -50,6 +155,7 @@ header {
 .first-current {
     width: 49px;
     margin-top: 32px;
+
     &::after {
         content: '';
         height: 4px;
@@ -61,76 +167,20 @@ header {
     }
 }
 
-.nav-item:not(:last-child),
-.connection-item:not(:last-child) {
-    margin-right: 50px;
-}
 
-
-
-.site-link .link,
-.site-nav .link {
-
-
-    @media screen and (min-width: 768px) {
-    display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    }
-}
-
-
-
-/* посилання у шапці  */
-
-.connection-icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-
-.site-link .link {
-
-    color: var(--primary-text-color);
-    display: flex;
-    align-items: center;
-}
-
-
-
-.connection-item .link {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-            color: var(--accent-color);
-        }
-}
-
-
-
-
-.site-link {
-    align-items: center;
+.heder-menu {
     margin-left: auto;
 
-}
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-/* спільне для усіх посилань шапки */
-.site-link,
-.site-nav {
-    display: none;
-    @media screen and (min-width: 768px) {
-    align-items: center;
-    @include font (500, 14px, 1.14);
-    letter-spacing: 0.02em;
-    display: flex;
+    &:focus,
+    &:hover {
+        fill: var(--accent-color);
     }
 
-
-
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
 }
-
-// icon-menu_40px
