@@ -251,6 +251,9 @@ header {
 
 .mob-soc-list {
     display: flex;
+    @media screen and (max-width:479px) {
+        font-size: 10px;
+    }
     .link {
         color: var(--accent-color);
     }
@@ -275,7 +278,12 @@ padding-right: 10px;
 }
 
 .mob-site-link__tel {
-    @include font (500, 34px, 1.17);
+    @include font (500, 20px, 1.17);
+    @media screen and (min-width: 480px) {
+            @include font (500, 34px, 1.17);
+
+    }
+
         letter-spacing: 0.02em;
         .link {
          color: var(--accent-color);
@@ -284,8 +292,12 @@ padding-right: 10px;
 }
 
 .mob-site-link__mail {
-    @include font (500, 24px, 1.16);
-        letter-spacing: 0.02em;
+    @include font (500, 20px, 1.16);
+    @media screen and (min-width: 480px) {
+         @include font (500, 24px, 1.16);
+        
+    }
+   letter-spacing: 0.02em;
         .link {
               color: var(--primary-text-color);
         // color: #757575;
