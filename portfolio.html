@@ -17,33 +17,101 @@
 <body>
 
     <header>
-        
-            <div class="container container-header">
-                <a href="./index.html" class="logo">Web<span class="logo-black">Studio</span></a>
-                <nav class="nav">
-                    <ul class="site-nav">
-                        <li class="nav-item"><a href="./index.html" class="link ">Студия</a></li>
-                        <li class="nav-item"><a href="./portfolio.html" class="link current second-current">Портфолио</a></li>
-                        <li class="nav-item"><a href="" class="link ">Контакты</a></li>
     
-                    </ul>
-                </nav>
-               
-                    <ul class="site-link">
-                        <li class="connection-item"><a href="mailto:info@devstudio.com" class="link"><svg
-                                    class="connection-icon" width="16px" height="12px">
+    
+        <div class="container container-header">
+            <a href="./index.html" class="logo"> Web<span class="logo-black">Studio</span></a>
+            <nav class="nav">
+                <ul class="site-nav">
+                    <li class="nav-item"><a href="/index.html" class="link">Студия</a></li>
+                    <li class="nav-item"><a href="./portfolio.html" class="link current second-current">Портфолио</a></li>
+                    <li class="nav-item"><a href="" class="link ">Контакты</a></li>
+    
+                </ul>
+            </nav>
+            <ul class="site-link">
+                <li class="connection-item site-link__mail"><a href="mailto:info@devstudio.com"
+                        class="connection-link  link"><svg class="connection-icon" width="16px" height="12px">
+                            <use href="./images/icons&BG/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a></li>
+                <li class="connection-item"><a href="tel:+380961111111" class="connection-link link ">
+                        <svg class="connection-icon" width="10px" height="16px">
+                            <use href="./images/icons&BG/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+            </ul>
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon" width="40px" height="40px">
+                    <use href="./images/icons&BG/icons.svg#icon-menu_40px"></use>
+                </svg>
+    
+            </button>
+    
+        </div>
+        <div class="modal-menu">
+            <div class="container">
+                <div class="container-menu-top">
+                    <button type="button" class="menu-close">
+                        <svg class="menu-close__icon" width="40px" height="40px">
+                            <use href="./images/icons&BG/icons.svg#icon-close_40px"></use>
+                        </svg>
+    
+                    </button>
+                    <nav class="mob-nav">
+                        <ul class="site-mob-nav">
+                            <li class="mob-nav-item"><a href="/index.html"
+                                    class="mob-link current link ">Студия</a></li>
+                            <li class="mob-nav-item"><a href="./portfolio.html" class="mob-link link second-current">Портфолио</a></li>
+                            <li class="mob-nav-item"><a href="" class="mob-link link">Контакты</a></li>
+    
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="container-menu-buttom">
+                    <ul class="mob-site-link">
+                        <li class="mob-connection-item mob-site-link__mail"><a href="mailto:info@devstudio.com"
+                                class="mob-connection-link  link"><svg class="mob-connection-icon" width="16px"
+                                    height="12px">
                                     <use href="./images/icons&BG/icons.svg#icon-envelope"></use>
                                 </svg>info@devstudio.com</a></li>
-                        <li class="connection-item"><a href="tel:+380961111111" class="link ">
-                                <svg class="connection-icon" width="10px" height="16px">
+                        <li class="mob-connection-item mob-site-link__tel"><a href="tel:+380961111111"
+                                class="mob-connection-link link ">
+                                <svg class="mob-connection-icon" width="10px" height="16px">
                                     <use href="./images/icons&BG/icons.svg#icon-smartphone"></use>
                                 </svg>+38 096 111 11 11</a></li>
                     </ul>
+    
+                    <ul class="mob-soc-list">
+                        <li class="mob-soc-list__item">
+                            <a href="" class="mob-soc-list__link link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mob-soc-list__item">
+                            <a href="" class="mob-soc-list__link link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mob-soc-list__item">
+                            <a href="" class="mob-soc-list__link link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mob-soc-list__item">
+                            <a href="" class="mob-soc-list__link link">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
                 </div>
     
-          
-       
+    
+            </div>
+    
+        </div>
     </header>
+
+
    <main>
        <h1 class="visually-hidden"> портфолио вебстудии</h1>
        
@@ -325,7 +393,7 @@
                                 <source srcset="./images/portfolio/p-9-m.jpeg 1x ,
                                   ./images/portfolio/p-9-m-2x.jpeg 2x "
                                    media="(min-width: 320px)" />
-                                <img src="./images/portfolio/p-9-m.jpeg" alt="Технокряк">
+                                <img src="./images/portfolio/" alt="Технокряк">
                             </picture>
                             <p class="exampl-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -448,7 +516,7 @@
 
 
    
-
+<script src="./js/menu.js"></script>
 
 </body>
 

@@ -66,7 +66,8 @@ header {
 
 .connection-link {
     color: var(--primary-text-color);
-    
+    display: flex;
+    align-items: center;
 
     transition-property: color;
         transition-duration: 250ms;
@@ -82,8 +83,7 @@ header {
     }
 
         @media screen and (min-width: 1200px) {
-        align-items: center;
-        margin-left: auto;
+        // margin-left: auto;
         padding-top: 32px;
         padding-bottom: 32px;
         }
@@ -127,6 +127,10 @@ header {
 
 
 // ----------CURENTS-----------
+ .mob-link {
+     color: var(--section-title-color);
+
+ }
 
 .site-nav .current {
     padding-bottom: 0;
@@ -138,7 +142,9 @@ header {
 }
 
 .second-current {
-    width: 78px;
+    color: var(--accent-color);
+            @media screen and (min-width: 768px) {
+                width: 78px;
     margin-top: 32px;
 
     &::after {
@@ -148,12 +154,16 @@ header {
         border-radius: 2px;
         background-color: var(--accent-color);
         margin-top: 28px;
+            }
+    
 
     }
 }
 
 .first-current {
-    width: 49px;
+    color: var(--accent-color);
+            @media screen and (min-width: 768px) {
+               width: 49px;
     margin-top: 32px;
 
     &::after {
@@ -162,15 +172,25 @@ header {
         display: block;
         border-radius: 2px;
         background-color: var(--accent-color);
-        margin-top: 28px;
+        margin-top: 28px; 
+            }
+    
 
     }
 }
 
-
-.heder-menu {
+.menu-close {
+        border: 0;
+            background-color: unset;
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+}
+.menu-open {
     margin-left: auto;
-
+    border: 0;
+    background-color: unset;
     transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -183,4 +203,96 @@ header {
         @media screen and (min-width: 768px) {
             display: none;
         }
+}
+
+
+
+
+.modal-menu {
+    position: fixed;
+    z-index: 1;
+    background-color:#ffffff ;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding:48px 40px;
+    overflow: auto;
+    transform: translateX(100%);
+    transition-property: transform;
+        transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-open {
+        transform: translateX(0);
+    }
+@media screen and (min-width: 768px) {
+        display: none;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+}
+}
+
+.mob-nav {
+    @include font (500, 40px, 1.17);
+        letter-spacing: 0.02em;
+}
+
+
+.mob-nav-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-soc-list {
+    display: flex;
+    .link {
+        color: var(--accent-color);
+    }
+}
+
+.mob-soc-list__item:not(:last-child) {
+    margin-right: 10px;
+padding-right: 10px;
+   border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+}
+
+.mob-site-link {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+    
+}
+
+.mob-connection-item:not(:first-child) {
+    margin-bottom: 32px;
+}
+
+.mob-site-link__tel {
+    @include font (500, 34px, 1.17);
+        letter-spacing: 0.02em;
+        .link {
+         color: var(--accent-color);
+
+        }
+}
+
+.mob-site-link__mail {
+    @include font (500, 24px, 1.16);
+        letter-spacing: 0.02em;
+        .link {
+              color: var(--primary-text-color);
+        // color: #757575;
+}
+        }
+      
+
+.mob-connection-icon {
+    display: none;
 }

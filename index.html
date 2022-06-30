@@ -36,13 +36,73 @@
                             <use href="./images/icons&BG/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
-            <a class="heder-menu" href="">
-                <svg class="menu-icon" width="40px" height="40px">
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon" width="40px" height="40px">
                     <use href="./images/icons&BG/icons.svg#icon-menu_40px"></use>
                 </svg>
-            </a>
+           
+            </button>
+                
         </div>
-    
+     <div class="modal-menu">
+       <div class="container">
+        <div class="container-menu-top">
+            <button type="button" class="menu-close">
+            <svg class="menu-close__icon" width="40px" height="40px">
+                <use href="./images/icons&BG/icons.svg#icon-close_40px"></use>
+            </svg>
+        
+        </button>
+        <nav class="mob-nav">
+            <ul class="site-mob-nav">
+                <li class="mob-nav-item"><a href="/index.html" class="mob-link current link first-current">Студия</a></li>
+                <li class="mob-nav-item"><a href="./portfolio.html" class="mob-link link ">Портфолио</a></li>
+                <li class="mob-nav-item"><a href="" class="mob-link link">Контакты</a></li>
+        
+            </ul>
+        </nav>
+        </div>
+        
+        <div class="container-menu-buttom">
+            <ul class="mob-site-link">
+            <li class="mob-connection-item mob-site-link__mail"><a href="mailto:info@devstudio.com"
+                    class="mob-connection-link  link"><svg class="mob-connection-icon" width="16px" height="12px">
+                        <use href="./images/icons&BG/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></li>
+            <li class="mob-connection-item mob-site-link__tel"><a href="tel:+380961111111" class="mob-connection-link link ">
+                    <svg class="mob-connection-icon" width="10px" height="16px">
+                        <use href="./images/icons&BG/icons.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
+        
+        <ul class="mob-soc-list">
+            <li class="mob-soc-list__item">
+                <a href="" class="mob-soc-list__link link">
+                    Instagram
+                </a>
+            </li>
+            <li class="mob-soc-list__item">
+                <a href="" class="mob-soc-list__link link">
+                    Twitter
+                </a>
+            </li>
+            <li class="mob-soc-list__item">
+                <a href="" class="mob-soc-list__link link"> 
+                    Facebook
+                </a>
+            </li>
+            <li class="mob-soc-list__item">
+                <a href="" class="mob-soc-list__link link">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+        </div>
+        
+
+       </div>
+
+     </div>
     </header>
 
     <main>
@@ -152,14 +212,14 @@
                         <picture>
                         <source srcset="./images/co-workers/ihor-dec.jpeg 1x,
                              ./images/co-workers/ihor-dec-2x.jpeg 2x "
-                              media="(min-width: 1200px)" />
+                              media="(min-width: 1200px)" type="image/jpeg" />
                             <source srcset="./images/co-workers/ihor-tab.jpeg 1x,
                               ./images/co-workers/ihor-tab-2x.jpeg 2x "
-                               media="(min-width: 768px)" />
+                               media="(min-width: 768px)" type="image/jpeg" />
                             <source srcset="./images/co-workers/ihor-mob.jpeg 1x ,
                              ./images/co-workers/ihor-mob-2x.jpeg 2x "
-                              media="(min-width: 320px)" />
-                            <img src="./images/co-workers/ihor-mob.jpeg" alt="Игорь Демьяненко">
+                              media="(max-width:767px)" type="image/jpeg" />
+                            <img src="./images/co-workers/ihor-mob.jpeg" alt="Игорь Демьяненко" width="450" height="460">
                         </picture>
      
                         <div class="co-worker__info">
@@ -168,7 +228,7 @@
                             <ul class="soc-list">
                                 <li class="soc-list__item">
                                     <a href="" class="soc-list__master">
-                                        <svg class="soc-list__icon" width="20px" height="20px">
+                                        <svg class="soc-list__icon" width="20" height="20">
                                             <use href="./images/icons&BG/icons.svg#icon-instagram-2-1"></use>
                                         </svg>
                                     </a>
@@ -206,7 +266,7 @@
                                                        media="(min-width: 768px)" />
                             <source srcset="./images/co-workers/olha-mob.jpeg 1x ,
                                                      ./images/co-workers/olha-mob-2x.jpeg 2x "
-                                                      media="(min-width: 320px)" />
+                                                      media="(max-width:767px)" />
                             <img src="./images/co-workers/olha-mob.jpeg" alt="Ольга Репина">
                         </picture>
                         <div class="co-worker__info">
@@ -249,7 +309,7 @@
                             <source srcset="./images/co-workers/mykola-tab.jpeg 1x,
                                                       ./images/co-workers/mykola-tab-2x.jpeg 2x " media="(min-width: 768px)" />
                             <source srcset="./images/co-workers/mykola-mob.jpeg 1x ,
-                                                     ./images/co-workers/mykola-mob-2x.jpeg 2x " media="(min-width: 320px)" />
+                                                     ./images/co-workers/mykola-mob-2x.jpeg 2x " media="(max-width:767px)" />
                             <img src="./images/co-workers/mykola-mob.jpeg" alt=" Николай Тарасов">
                         </picture>
                         <div class="co-worker__info">
@@ -296,7 +356,7 @@
                                     media="(min-width: 768px)" />
                                 <source srcset="./images/co-workers/misha-mob.jpeg 1x ,
                                                                                  ./images/co-workers/misha-mob-2x.jpeg 2x "
-                                    media="(min-width: 320px)" />
+                                    media="(max-width:767px)" />
                                 <img src="./images/co-workers/misha-mob.jpeg" alt=" Михаил Ермаков">
                             </picture>
                             <div class="co-worker__info">
@@ -570,8 +630,8 @@
                         <div class="modal-checkbox">
                         
                             <input type="checkbox" name="privacy" class="modal-check visually-hidden" value="true" id="check">
-                            <label class="modal-check-text" for="check">Соглашаюсь с рассылкой и принимаю&nbsp;<a class=" privacy-link" href="">
-                                    Условия договора</a></label>
+                            <label class="modal-check-text" for="check"><span>Соглашаюсь с рассылкой и принимаю&nbsp;<a class=" privacy-link" href="">
+                                    Условия договора</a></span></label>
                         
                         </div>
                     
@@ -595,6 +655,7 @@
  </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
 
 </body>
